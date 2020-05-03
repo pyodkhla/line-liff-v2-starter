@@ -122,6 +122,7 @@ function registerButtonHandlers() {
 
     // sendMessages call
     document.getElementById('sendMessageButton').addEventListener('click', function() {
+        window.alert('isInClient: ' + liff.isInClient());
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
